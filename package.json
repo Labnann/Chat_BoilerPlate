@@ -1,0 +1,27 @@
+{
+  "name": "socketioboilerplate",
+  "version": "1.0.0",
+  "description": "SocketIO BoilerPlate",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Labnann/SocketIOBoilerPlate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Labnann/SocketIOBoilerPlate/issues"
+  },
+  "homepage": "https://github.com/Labnann/SocketIOBoilerPlate#readme"
+}
