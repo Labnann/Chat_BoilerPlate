@@ -9,9 +9,6 @@ var $messages = $('.messages-content'),
 
 $(window).load(function () {
   $messages.mCustomScrollbar();
-  setTimeout(function () {
-    showReply();
-  }, 100);
 });
 
 function updateScrollbar() {
@@ -79,9 +76,6 @@ var replyQueue = [
 ]
 
 function showReply(reply) {
-  if ($('.message-input').val() != '') {
-    return false;
-  }
   // $('<div class="message loading new"></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
@@ -107,7 +101,7 @@ const properties = {};
     input.onfocus = () => {
       let chat = document.getElementsByClassName("chat")[0];
 
-      chat.style.backgroundColor = "#00000088";
+      chat.style.backgroundColor = "#000000BB";
       chat.style.top = "60%";
       chat.style.height = "35%";
       chat.style.bottom = "5%";
