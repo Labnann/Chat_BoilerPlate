@@ -7,9 +7,10 @@ const { Server } = require("socket.io");
 const handleSocketIo = (io)=>{
  io.on("connection", (socket) => {
         console.log("A user connected");
+        socket.broadcast.emit("object", {message: "[[User Connected]]"});
 
         socket.on("disconnect", ()=>{
-            console.log("A user disconnected");
+            socket.broadcast.emit("object", {message: "[[User Disconnected]]"});
         });
 
         socket.on("object", (object) => {

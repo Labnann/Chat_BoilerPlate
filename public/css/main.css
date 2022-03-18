@@ -31,16 +31,19 @@ Chat
 .chat {
   position: absolute;
  
-  top: 60%;
+  top: 95%;
   width: -webkit-fill-available;
-  height: 35%;
-  bottom: 5%;
+  height: 5%;
+  
   z-index: 2;
   overflow: hidden;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.0);
   background-color: #00000088;
-  border-radius: 20px;
+  /*
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -113,7 +116,7 @@ Messages
   border-radius: 10px 10px 10px 0;
   background: rgba(0, 0, 0, 0.3);
   margin: 8px 0;
-  font-size: 11px;
+  font-size: 16px;
   line-height: 1.4;
   margin-left: 0px;
   position: relative;
@@ -249,16 +252,17 @@ Message Box
   position: relative;
 }
 .message-box .message-input {
+  overflow:hidden;
   background: none;
   border: none;
   outline: none !important;
   resize: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 11px;
-  height: 17px;
+  font-size: 16px;
+  height: 20px;
   margin: 0;
   padding-right: 20px;
-  width: -webkit-fill-available;
+  width: 85%;
 }
 .message-box textarea:focus:-webkit-placeholder {
   color: transparent;
@@ -266,16 +270,19 @@ Message Box
 .message-box .message-submit {
   position: absolute;
   z-index: 1;
-  bottom: 30%;
-  right: 10px;
-  color: #fff;
+  top: 10%;
+  bottom:10%;
+  height:80%;
+  right: 0px;
+  width: 15%;
+  color: #ffffff;
   border: none;
-  background: #248A52;
+  background: #248A5255;
   font-size: 10px;
   text-transform: uppercase;
   line-height: 1;
   padding: 6px 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   outline: none !important;
   transition: background 0.2s ease;
 }
